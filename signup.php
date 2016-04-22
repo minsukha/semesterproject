@@ -1,10 +1,14 @@
+<html>
+    <title>Main Street Market</title>
+    <head>
+        <link rel="stylesheet" href="./CSS/style.css">
+    </head>
 <?php
 session_start();
 require_once 'header.php';
 require_once 'databaseConnection.php';
-pageHeader("Account Creation");
 
-if(isset($_POST["firstName"], $_POST["lastName"], $_POST["email"], $_POST["address"], $_POST["password"], ){
+if(isset($_POST["firstName"], $_POST["lastName"], $_POST["email"], $_POST["address"], $_POST["password"]){
     $firstName=$_POST["firstName"];
     $lastName=$_POST["lastName"];
     $email=$_POST["email"];
@@ -83,9 +87,3 @@ function passwordCheck($password)
     }
 }
 ?>
-<html>
-    <head>
-        <title>Main Street Market Grocery</title>
-        <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    </head>
-</html>
