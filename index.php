@@ -1,48 +1,32 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<?php
+    require_once("header.php");
+    
+    // if($SESSION["loggedin"]){
 
-<html>
-    <title>Main Street Market</title>
-    <head>
-        <link rel="stylesheet" href="./CSS/style.css">
-    </head>
-    <body>
-        <?php
-        require_once("header.php");
-        if($SESSION["loggedin"]){
+    //     //can be done with an sql command setting a boolean to true
+    //     //could have field in table to represent if it was added in the last month
+    //     if(NEW PRODUCTED ADDED TO DATABASE WITHIN LAST MONTH){
+    //         echo "Our newest products.<br><br>";
 
-            //can be done with an sql command setting a boolean to true
-            //could have field in table to represent if it was added in the last month
-            if(NEW PRODUCTED ADDED TO DATABASE WITHIN LAST MONTH){
-                echo "Our newest products.<br><br>";
+    //         //list of products that meet criteria
+    //         //scrolling menu or something to see them all
+    //         //similar to amazon's implementation
+    //     }
 
-                //list of products that meet criteria
-                //scrolling menu or something to see them all
-                //similar to amazon's implementation
-            }
+    //     //reset the boolean then set it to true for this statement as well (don't need two booleans here)
+    //     //could have another field to represent if it was replenished within the last month
+    //     if(PRODUCT WAS RESTOCKED FROM EMPTY WITHIN THE LAST MONTH && CURRENTLY IN STOCK){
+    //         echo "Replenished stock.<br><br>";
 
-            //reset the boolean then set it to true for this statement as well (don't need two booleans here)
-            //could have another field to represent if it was replenished within the last month
-            if(PRODUCT WAS RESTOCKED FROM EMPTY WITHIN THE LAST MONTH && CURRENTLY IN STOCK){
-                echo "Replenished stock.<br><br>";
+    //         //same as above
+    //     }
+    // }else{
+    //     echo "Log in to access page.";
 
-                //same as above
-            }
-        }else{
-            echo "Log in to access page.";
+    //     //header function to call log in or sign up boxes
 
-            //header function to call log in or sign up boxes
-
-        }
-
-        ?>
-    </body>
-</html>
-
+    // }
+?>
 
 
 <!--

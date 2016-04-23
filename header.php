@@ -5,8 +5,11 @@
     </head>
 <?php
     echo <<<_END
-<h2><img src="Images/logo.png" width="150" height="150" alt="pizzalogo" />
+    <h2>
+    <br>
+    <img src="Images/logo.png" width="500" height="100" alt="msm logo" id="logo"/>
     <center>
+    <br>
     <a href="index.php">Home</a>
     <a href="menu.php">Menu</a>
     <a href="checkout.php">Checkout</a>
@@ -17,18 +20,19 @@ _END;
     if(!isset($_SESSION['loggedin']))
         echo <<<_END
         <a href="formLogin.php">Login</a>
-        <a href="formSignup.php">Sign up</a>
+        <a href="formAccountCreation.php">Sign up</a>
 _END;
     else
         echo <<<_END
         <a href="logout.php">Logout</a>
+        <a href="accountSummary.php">Account Summary</a>
 _END;
     if(isset($_SESSION['admin']))
         echo <<<_END
-        <a href="formsummary.php">Summary</a>
+        <a href="stock.php">Stock</a>
     </center>
 _END;
-    echo "</h2><hr />";
+    echo "</h2>";
 
 function generateTable($arr, $colName)
 {
@@ -53,7 +57,6 @@ function loginSignup(){
         <input type="reset" value="Cancel"/>
      </form>
 _END;
-
 }
 
 ?>

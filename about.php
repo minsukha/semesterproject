@@ -24,12 +24,12 @@
             var map;
             function initMap() {
                 map = new google.maps.Map(document.getElementById('map'), {
-                    center: {lat: 32.829468, lng: -83.078954},
+                    center: {lat: 32.847495, lng: -83.194136},
                     zoom: 12
                 });
 
                 var marker = new google.maps.Marker({
-                    position: {lat: 32.829468, lng: -83.078954},
+                    position: {lat: 32.847495, lng: -83.194136},
                     map: map,
                     title: 'Main Street Market'
                 });
@@ -40,7 +40,7 @@
                         '</div>'+
                         '<h1 id="firstHeading" class="firstHeading">Main Street Market</h1>'+
                         '<div id="bodyContent">'+
-                            '<p><b>Main Street Market</b>, located at 112 Main Street McIntyre, Ga. Home to all of your favorite items </p>'+
+                            '<p><b>Main Street Market</b>, located at 112 Main Street McIntyre, Ga 31054. Home to all of your favorite items </p>'+
                             '</div>'+
                     '</div>';
 

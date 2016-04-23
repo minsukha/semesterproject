@@ -1,9 +1,4 @@
-<html>
-    <title>Main Street Market</title>
-    <head>
-        <link rel="stylesheet" href="./CSS/style.css">
-    </head>
-    <?php
+<?php
     session_start();
     require_once 'header.php';
     require_once 'databaseConnection.php';
@@ -22,4 +17,4 @@
         }
     }
 
-      ?>
+?>
