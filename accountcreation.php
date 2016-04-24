@@ -15,11 +15,11 @@ function passwordCheck($password)
     $length = false;
     $numeric = false;
     $alphabetic = false;
-    
+
     if(empty($password))
     {
         echo "<br> You must enter a password </br>";
-    } 
+    }
     if(6 > strlen($password))
     {
         $length = false;
@@ -44,7 +44,7 @@ function passwordCheck($password)
     {
         $alphabetic = true;
     }
-    
+
     if($length = false)
     {
         echo "<br> Your password length must be at least six characters </br>";
