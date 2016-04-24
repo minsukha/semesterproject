@@ -1,6 +1,7 @@
 <html>
     <title>Main Street Market</title>
     <head>
+        <script type="text/javascript" src="jQuery-1.4.1-min.js"></script>
         <link rel="stylesheet" href="./CSS/style.css">
     </head>
 <?php
@@ -32,7 +33,7 @@ _END;
         <a href="stock.php">Stock</a>
     </center>
 _END;
-    echo "</h2>";
+    echo "</h2><br><br>";
 
 function generateTable($arr, $colName)
 {
@@ -58,5 +59,7 @@ function loginSignup(){
      </form>
 _END;
 }
+
+
 
 ?>
